@@ -1,23 +1,41 @@
 {
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "latest",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
-  "devDependencies": {
-    "@types/node": "17.0.4",
-    "@types/react": "17.0.38",
-    "autoprefixer": "^10.4.0",
-    "postcss": "^8.4.5",
-    "prettier": "^2.5.1",
-    "prettier-plugin-tailwindcss": "^0.1.1",
-    "tailwindcss": "^3.0.7",
-    "typescript": "4.5.4"
-  }
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"fix": "prettier --write ."
+	},
+	"dependencies": {
+		"@zincui/box": "^0.0.7",
+		"@zincui/button": "^0.0.8",
+		"@zincui/input": "^0.0.8",
+		"@zincui/loader": "^0.0.1",
+		"got": "^12.0.1",
+		"next": "latest",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"swr": "^1.2.0"
+	},
+	"devDependencies": {
+		"@types/node": "17.0.4",
+		"@types/react": "17.0.38",
+		"autoprefixer": "^10.4.0",
+		"postcss": "^8.4.5",
+		"prettier": "^2.5.1",
+		"prettier-plugin-tailwindcss": "^0.1.1",
+		"tailwindcss": "^3.0.7",
+		"typescript": "4.5.4",
+		"xo": "^0.47.0"
+	},
+	"xo": {
+		"prettier": true
+	},
+	"prettier": {
+		"bracketSpacing": false,
+		"semi": false,
+		"singleQuote": true,
+		"trailingComma": "es5",
+		"useTabs": true
+	}
 }
